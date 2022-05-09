@@ -1,0 +1,44 @@
+body{
+  background-color: black;
+}
+
+.Text {
+    align-self: center;
+    color: #fff;
+    margin: auto;
+    width: 80%;
+    
+    padding: 10px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    width: 60px;
+    background-color: black;
+    color: rgba(167, 3, 3, 0.733);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgba(167, 3, 3, 0.733),
+    0 0 82px rgba(167, 3, 3, 0.733),
+    0 0 92px rgba(167, 3, 3, 0.733),
+    0 0 102px rgba(167, 3, 3, 0.733),
+    0 0 151px rgba(167, 3, 3, 0.733);
+  }
+  

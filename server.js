@@ -1,10 +1,17 @@
-var http = require('http');
-var fs = require('fs');
-http.createServer(function (req, res) {
-  fs.readFile('index.html', function(err, data) {
-    app.use(express.static('public'));
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    return res.end();
-  });
-}).listen(8080);
+const express = require("express");
+const app = express();
+const port = 8080;
+
+app.listen(port, () => {
+  console.log("Application started and Listening at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+});
+
+// serve your css as static
+app.use(express.static(__dirname));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
+
+
